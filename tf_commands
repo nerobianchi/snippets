@@ -1,0 +1,41 @@
+c:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE
+
+-------------------------------------------
+history
+changeset
+diff
+workspaces
+get
+merge
+-------------------------------------------
+
+tf history /noprompt /recursive /slotmode /collection:"server/defaultCollection" "$/project01/DEV" /stopafter:10 /user:erdemozd
+tf history /noprompt /recursive /slotmode /collection:"server/defaultCollection" "$/project01/DEV" /stopafter:10 /user:erdemozd /format:detailed
+tf changeset /collection:"server/defaultCollection"  /noprompt 600327
+
+tf history /noprompt /recursive /slotmode /collection:"server/defaultCollection" "$/project01/DEV" /stopafter:20 /user:erdemozd
+tf history /noprompt /recursive /slotmode /collection:"server/defaultCollection" "$/project01/uat" /stopafter:20 /user:erdemozd
+tf changeset /noprompt {changesetno}
+
+
+tf diff <folder> /version:C776~C777 /recursive /format:unified
+
+
+tf history /noprompt $/project01/DEV/Interface/Modules/CreditOffer/Intertech.CreditOffer.Operation/FgbOperation.cs
+tf diff    /noprompt $/project01/DEV/Interface/Modules/CreditOffer/Intertech.CreditOffer.Operation/FgbOperation.cs /version:C600327~T
+
+
+tf workspaces /format:detailed /collection:http://server:8080/tfs/defaultcollection
+tf get /all /recursive /version:T "$/project02/DEV/esb"
+
+tf workfold
+tf workfold $/project02/DEV/esb c:\projects\project02\src\dev\esb
+
+--sıfırdan workspace oluşturur
+tf workspace /new /noprompt /collection:http://server:8080/tfs/defaultcollection /permission:private /location:server filetime:current
+
+tf merge /candidate "$/project01/DEV/Pusula" "$/project01/UAT/pusula" /recursive
+
+
+tf get /all /recursive /noprompt /version:T "$/project02/DEV/esb"
+
