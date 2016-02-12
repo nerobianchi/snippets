@@ -135,3 +135,4 @@ Location: http://royalhope.nhs.uk/slots/1234/appointment
 	<link rel="/linkrels/appointment/updateContactInfo" uri="/patients/jsmith/contactInfo"/>
 	<link rel="/linkrels/help" uri="/help/appointment"/>
 </appointment>
+------------------------------------------------------------------------------------------
