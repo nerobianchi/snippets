@@ -1,0 +1,51 @@
+7z e archive.zip -oC:\soft *.cpp -r
+7z x archive.zip -oC:\soft *.cpp -r
+
+-------------------------------------
+
+
+
+git clean -df
+git checkout -- .
+
+git commit
+git push
+
+
+git config --global --get autocrlf
+git config --local autocrlf input /*true*/ /*false*/
+
+
+git symbolic-ref HEAD
+
+
+
+git branch --list -ra     -> list all branches and remotes
+
+
+-c diff.mnemonicprefix=false -c core.quotepath=false
+
+git branch -d -r origin/v0.4
+git push origin :refs/heads/v0.4
+git push origin v0.6   -> pushes local created branch to remote
+
+git push --set-upstream origin v0.8 -> if newly created branch has not been pushed origin
+
+
+
+
+
+
+
+-------------------------------------
+| grep -i tangram
+
+
+
+---------------------------------
+reg.exe query "HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0" /v MSBuildToolsPath
+
+-----------------------------------------------------------------------------------------
+"C:\Program Files (x86)\IIS Express\iisexpress" /path:d:\projects\src\tangram\presentation\tangram.web /port:9090
+
+-----------------------------------------------------------------------------------------
