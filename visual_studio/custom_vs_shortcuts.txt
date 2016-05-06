@@ -1,3 +1,3 @@
 Close -> ctrl + w (File.Close)
-Source Control explorer -> ctrl + Ã , s (view.tfssourcecontrolExplorer)
-pending changes -> ctrl + Ã , ctrl + p (View.tfspendingchanges)
+Source Control explorer -> ctrl + ç , s (view.tfssourcecontrolExplorer)
+pending changes -> ctrl + ç , ctrl + p (View.tfspendingchanges)
