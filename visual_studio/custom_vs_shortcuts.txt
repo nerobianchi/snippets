@@ -1,4 +1,8 @@
 Close -> ctrl + w (File.Close)
-Source Control explorer -> ctrl + ç , s (view.tfssourcecontrolExplorer)
-pending changes -> ctrl + ç , ctrl + p (View.tfspendingchanges)
+Source Control explorer -> ctrl + U ,ctrl + s (view.tfssourcecontrolExplorer)
+Pending changes -> ctrl + u , ctrl + p (View.tfspendingchanges)
 find result 1 -> ctrl + alt + f9 (view.findresults1)
+
+
+//Source Control explorer -> ctrl + ç , s (view.tfssourcecontrolExplorer)
+//pending changes -> ctrl + ç , ctrl + p (View.tfspendingchanges)
