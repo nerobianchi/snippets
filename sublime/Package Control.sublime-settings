@@ -1,0 +1,31 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Angular2 HTML Syntax",
+		"AngularJS",
+		"Base Encoder",
+		"Compare Side-By-Side",
+		"Dockerfile Syntax Highlighting",
+		"GoSublime",
+		"HTML-CSS-JS Prettify",
+		"Jasmine JS",
+		"Jasmine Matchers Snippets",
+		"JsFormat",
+		"Markdown Extended",
+		"Markdown HTML Preview",
+		"Markdown Preview",
+		"OmniSharp",
+		"Package Control",
+		"ReadmePlease",
+		"RSpec",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"Terminal",
+		"TypeScript",
+		"View In Browser"
+	]
+}
