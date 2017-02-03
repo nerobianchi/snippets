@@ -1,0 +1,49 @@
+jdk-8u121-windows-x64.exe
+jre-8u121-windows-x64.exe
+
+visual studio 2015 (import config)
+    DotNetCore.1.0.1-VS2015Tools.Preview2.0.3.exe
+    vs2013.5.iso
+    JetBrains.ReSharperUltimate.2016.3.2.exe (import config)
+    extensions (should be saved)
+        codemaid
+        indent guides
+        productivity power tools
+        web essentials
+sql server 2014
+    sqlcompletefree.exe
+jetbrains-toolbox-1.1.2143.exe
+    rider (should be saved)
+    intellij (should be saved)
+VSCodeSetup-1.9.0.exe (should be saved)
+Sublime Text Build 3126 x64 Setup.exe (import config)
+
+Git-2.11.0.3-64-bit.exe
+putty
+    GIT_SSH=c:\Program Files\Putty\plink.exe
+    open ssh
+        type %userprofile%\.ssh\id_rsa.pub
+        cat ~/.ssh/id_rsa.pub
+        ssh-keygen -t rsa -C "erdem.ozdemir@hepsiburada.com"
+        type %userprofile%\.ssh\id_rsa.pub | clip
+
+cmder (import config)
+InstallDocker.msi
+
+node-v7.5.0-x64.msi
+otp_win64_19.2.exe
+rabbitmq_server-3.6.6
+redis-desktop-manager-0.8.8.384.exe
+SourceTreeSetup-1.10.15.4.exe
+
+WinMerge-2.14.0-Setup.exe
+KDiff3-64bit-Setup_0.9.98-2.exe
+wiztree_2_01_setup.exe
+
+tcmd900ax64.exe
+TerminalsSetup_3.6.1.msi
+googledrivesync.exe
+setup_clover@3.2.7.exe
+SlackSetup.exe
+SpotifySetup.exe
+7zip
