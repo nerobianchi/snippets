@@ -1,0 +1,47 @@
+dbeaver - db manager
+putty - ssh
+cmder - terminal
+sublimetext
+7-Zip
+apache-jmeter-2.13
+Fiddler2 - network analyser
+redis desktop manager
+slack
+netbeans
+	gradle
+	restart ide
+	Darcula LAF
+source tree - git 
+golang
+winmerge
+rabbitmq
+intelliJ
+Erlang
+Glassfish
+vagrant
+docker
+mongodb
+modejs
+libreOffice
+gnuWin32-wget
+irfanView
+displayFusion
+GitExtensions
+Gadwin
+DebugDiagnostics
+Git for Windows
+wiztree
+clover
+GitKraken
+terminals - remote desktop 
+
+lib
+	elasticsearch-2.2.0
+	Go
+	gradle-2.11
+	kibana-4.4.1-windows
+	ruby-2.2.4-x64-mingw32
+
+
+----------------------------------------------------
+%systemroot%\system32\inetsrv\APPCMD

@@ -1,0 +1,5 @@
+%AppData%\Code\User\snippets
+%AppData%\Code\User\keybindings.json
+%AppData%\Code\User\settings.json
+
+code --list-extensions

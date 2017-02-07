@@ -3,7 +3,8 @@ TO_BE_INSTALLED
 from docker
     elasticsearch
     mongodb
-
+    rabbitmq
+    
 coverage
     sonarqube
     opencover

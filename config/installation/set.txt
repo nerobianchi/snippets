@@ -16,7 +16,6 @@ c:\apps\node-v6.9.1-win-x64
 %PYTHON2_PATH%
 %PYTHON3_PATH%_
 %GOROOT%\bin
-c:\apps\Atom
 %JAVA_HOME%\bin
 %SCALA_ROOT%\bin
 %M2%

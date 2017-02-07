@@ -1,5 +1,5 @@
 jdk-8u121-windows-x64.exe
-jre-8u121-windows-x64.exe
+jre-8u121-windows-x64.exe --no need
 
 visual studio 2015 (import config)
     DotNetCore.1.0.1-VS2015Tools.Preview2.0.3.exe
@@ -34,7 +34,7 @@ node-v7.5.0-x64.msi
 otp_win64_19.2.exe
 rabbitmq_server-3.6.6
 redis-desktop-manager-0.8.8.384.exe
-SourceTreeSetup-1.10.15.4.exe
+SourceTreeSetup-1.10.15.4.exe --if it includes
 
 WinMerge-2.14.0-Setup.exe
 KDiff3-64bit-Setup_0.9.98-2.exe
