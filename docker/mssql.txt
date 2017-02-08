@@ -1,0 +1,3 @@
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Password123*' -p 1433:1433 -d microsoft/mssql-server-linux
+
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Password123*' -p 1433:1433 -v d:\src\erdem\docker\mssql\data:/var/opt/mssql -d microsoft/mssql-server-linux

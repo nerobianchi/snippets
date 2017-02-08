@@ -6,7 +6,7 @@ visual studio 2015 (import config)
     vs2013.5.iso
     JetBrains.ReSharperUltimate.2016.3.2.exe (import config)
     extensions (should be saved)
-        codemaid
+        codemaid (should be saved)
         indent guides
         productivity power tools
         web essentials
@@ -46,4 +46,4 @@ googledrivesync.exe
 setup_clover@3.2.7.exe
 SlackSetup.exe
 SpotifySetup.exe
-7zip
+7-Zip

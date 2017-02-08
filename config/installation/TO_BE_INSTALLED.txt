@@ -4,7 +4,7 @@ from docker
     elasticsearch
     mongodb
     rabbitmq
-    
+    microsoft/mssql-server-linux
 coverage
     sonarqube
     opencover

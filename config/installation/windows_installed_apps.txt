@@ -1,31 +1,26 @@
 dbeaver - db manager
 putty - ssh
-cmder - terminal
-sublimetext
-7-Zip
+
+
 apache-jmeter-2.13
 Fiddler2 - network analyser
-redis desktop manager
-slack
+
 netbeans
 	gradle
 	restart ide
 	Darcula LAF
-source tree - git 
-golang
-winmerge
+
+
+
 rabbitmq
 intelliJ
 Erlang
 Glassfish
 vagrant
-docker
+
 mongodb
-modejs
-libreOffice
+nodejs
 gnuWin32-wget
-irfanView
-displayFusion
 GitExtensions
 Gadwin
 DebugDiagnostics
