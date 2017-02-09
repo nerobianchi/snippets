@@ -47,3 +47,4 @@ setup_clover@3.2.7.exe
 SlackSetup.exe
 SpotifySetup.exe
 7-Zip
+vim (import config) (~/.vimrc)
