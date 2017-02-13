@@ -1,0 +1,5 @@
+docker run -d -v $pwd\config:/usr/share/elasticsearch/config elasticsearch
+
+docker run -d -p 9200:9200 -v d:\src\erdem\docker\elasticsearch\config:/usr/share/elasticsearch/config -v d:\src\erdem\docker\elasticsearch\data:/usr/share/elasticsearch/data elasticsearch
+
+docker run -d -p 9200:9200 elasticsearch

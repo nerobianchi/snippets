@@ -1,0 +1,22 @@
+conemu\.bashrc ~/.bashrc
+conemu\.profile ~/.profile
+conemu\init.bat cmder\vendor\init.bat
+conemu\20170208.xml - imported from app
+
+git/.gitconfig ~/.gitconfig
+
+vim/.vimrc ~/.vimrc
+
+sublime/Default (OSX).sublime-keymap %appdata%\Sublime Text 3\Packages\User\Default (OSX).sublime-keymap
+sublime/Default (Windows).sublime-keymap %appdata%\Sublime Text 3\Packages\User\Default (Windows).sublime-keymap
+sublime/Package Control.sublime-settings %appdata%\Sublime Text 3\Packages\User\Package Control.sublime-settings
+sublime/Preferences.sublime-settings %appdata%\Sublime Text 3\Packages\User\Preferences.sublime-settings
+
+winmerge\20170209 - imported from app
+
+maven/.m2 ~/.m2
+
+jmeter/jmeter.properties bin/jmeter.properties
+
+--------to be done -----
+copy ~\.ssh if ssh will be used for the same 

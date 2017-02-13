@@ -1,0 +1,5 @@
+[
+	{ "keys": ["shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
+	{ "keys": ["ctrl+0"], "command": "reset_font_size" }
+]

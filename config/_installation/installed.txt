@@ -8,15 +8,16 @@ visual studio 2015 (import config)
     extensions (should be saved)
         codemaid (should be saved)
         indent guides
-        productivity power tools
+        productivity power tools (should be saved)
         web essentials
 sql server 2014
     sqlcompletefree.exe
+
 jetbrains-toolbox-1.1.2143.exe
     rider (should be saved)
     intellij (should be saved)
 VSCodeSetup-1.9.0.exe (should be saved)
-Sublime Text Build 3126 x64 Setup.exe (import config)
+Sublime Text Build 3126 x64 Setup.exe (import config)(should be portable)
 
 Git-2.11.0.3-64-bit.exe
 putty
@@ -27,16 +28,15 @@ putty
         ssh-keygen -t rsa -C "erdem.ozdemir@hepsiburada.com"
         type %userprofile%\.ssh\id_rsa.pub | clip
 
-cmder (import config)
+cmder (import config)(should be portable)
 InstallDocker.msi
 
 node-v7.5.0-x64.msi
 otp_win64_19.2.exe
-rabbitmq_server-3.6.6
 redis-desktop-manager-0.8.8.384.exe
 SourceTreeSetup-1.10.15.4.exe --if it includes
 
-WinMerge-2.14.0-Setup.exe
+WinMerge-2.14.0-Setup.exe (import config)
 KDiff3-64bit-Setup_0.9.98-2.exe
 wiztree_2_01_setup.exe
 
@@ -47,4 +47,24 @@ setup_clover@3.2.7.exe
 SlackSetup.exe
 SpotifySetup.exe
 7-Zip
+
+Python27
+
+--------manual download and setup----------------
+dbeaver
 vim (import config) (~/.vimrc)
+
+python-3.6.0-embed-amd64
+go
+scala-2.12.1
+ruby-2.3.3-x64-mingw32
+
+apache-maven-3.3.9 (import config)
+apache-jmeter-2.13 (import config)
+
+---from docker-----------
+    elasticsearch
+    kibana
+    mongodb
+    rabbitmq
+    microsoft/mssql-server-linux

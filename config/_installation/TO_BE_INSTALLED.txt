@@ -1,10 +1,5 @@
 TO_BE_INSTALLED
 -------------------------------------------------------------
-from docker
-    elasticsearch
-    mongodb
-    rabbitmq
-    microsoft/mssql-server-linux
 coverage
     sonarqube
     opencover
@@ -12,12 +7,9 @@ coverage
 nexus-3.1.0-04-win64\
 sts-bundle\
 spring-tool-suite-3.8.1.RELEASE-e4.6-win32-x86_64.zip
-------------------------
-apache-maven-3.3.9\
-dbeaver\
-go\
-Python27\
-python-3.5.2-embed-amd64\
-ruby-2.3.1-x64-mingw32\
-scala-2.12.1\
+
+
+
+
+
 SqlDbxPersonal\

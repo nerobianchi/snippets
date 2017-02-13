@@ -1,0 +1,5 @@
+:e new file
+:!python %
+
+
+mklink %HOMEPATH%\.vimrc c:\path\to\your\.vimrc

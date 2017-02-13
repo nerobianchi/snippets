@@ -1,0 +1,21 @@
+
+Fiddler2 - network analyser
+
+netbeans
+	gradle
+	restart ide
+	Darcula LAF
+
+Glassfish
+
+gnuWin32-wget
+GitExtensions
+Gadwin
+DebugDiagnostics
+
+GitKraken
+
+
+
+----------------------------------------------------
+%systemroot%\system32\inetsrv\APPCMD
