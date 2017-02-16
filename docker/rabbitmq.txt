@@ -1,0 +1,5 @@
+docker run -d --hostname my-rabbit --name some-rabbit -p 15672:15672 rabbitmq:management
+docker run -d --hostname my-rabbit --name some-rabbit -p 15672:15672 -p 5672:5672 -e RABBITMQ_DEFAULT_USER=omscode -e RABBITMQ_DEFAULT_PASS=oms123 -e RABBITMQ_ERLANG_COOKIE='bjk1903' rabbitmq:management
+
+--not worked
+docker run -d --hostname my-rabbit --name some-rabbit -p 15672:15672 -p 5672:5672 -v D:\src\erdem\docker\rabbitmq:/var/lib/rabbitmq -e RABBITMQ_DEFAULT_USER=omscode -e RABBITMQ_DEFAULT_PASS=oms123 -e RABBITMQ_ERLANG_COOKIE='bjk1903' rabbitmq:management
