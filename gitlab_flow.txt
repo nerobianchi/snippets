@@ -1,0 +1,14 @@
+Workflow
+    This workflow is needed to be followed in order to maintain the consistancy.
+        1.Move Jira issue assigned to you to In Progress
+        2.Create a branch that starts with Jira issue number 
+        git checkout -b CS-123-lorem-ipsum-dolor
+        3.Commit the code with a message that starts with Jira issue number1 
+        git commit -m "CS-123 ..."
+        4.Push commit(s) to the branch and create a merge request on GitLab.
+            1.Add Resolves or Fixes keywords to the merge requests description or any commit if it does that. By doing this the issue will be moved automatically to Resolved step on Jira 2 git commit -m "Resolves CS-123"
+            2.Assign the merge request to any of the developers.
+        5.Move issue to Review step and assign the same person on Jira.
+        
+        1.This is needed to link TeamCity with issues :leftwards_arrow_with_hook:
+        2.GitLab Jira integration :leftwards_arrow_with_hook:
