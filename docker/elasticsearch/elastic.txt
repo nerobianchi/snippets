@@ -1,0 +1,26 @@
+docker run -d -p 9200:9200 -e ELASTICSEARCH_USER=admin -e ELASTICSEARCH_PASS=mypass tutum/elasticsearch
+
+
+bin/elasticsearch-plugin install x-pack
+bin/elasticsearch
+
+bin/kibana-plugin install x-pack
+bin/kibana
+
+Navigate to Kibana at http://localhost:5601/
+elastic
+changeme
+
+
+bin/elasticsearch-plugin install file:///d:\Downloads\elastic\x-pack-5.2.1.zip
+bin/kibana-plugin install file://d:/Downloads/elastic/x-pack-5.2.1.zip --only two //
+bin/logstash-plugin install file:///d:\Downloads\elastic\x-pack-5.2.1.zip
+
+
+
+
+
+
+First I deleted optimize/bundles and optimize/.babel-cache.json restarted kibana and didn't work, then I just did a reboot and got it working.
+
+Later I just add xpack.security.enabled: false in both elasticsearch.yml and kibana.yml

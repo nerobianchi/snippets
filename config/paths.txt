@@ -20,3 +20,5 @@ jmeter/jmeter.properties bin/jmeter.properties
 
 --------to be done -----
 copy ~\.ssh if ssh will be used for the same 
+
+
