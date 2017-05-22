@@ -1,0 +1,28 @@
+%systemroot%\system32\inetsrv\appcmd
+
+::delete web sites
+rmdir /S /Q c:\inetpub\wwwroot\omsapi2
+%systemroot%\system32\inetsrv\appcmd delete site /site.name:"omsapi2"
+
+rmdir /S /Q c:\inetpub\wwwroot\omsapiadapter2
+%systemroot%\system32\inetsrv\appcmd delete site /site.name:"omsapiadapter2"
+
+%systemroot%\system32\inetsrv\appcmd list site
+
+
+::create web sites
+mkdir c:\inetpub\wwwroot\omsapi2
+%systemroot%\system32\inetsrv\appcmd add site /name:"omsapi2" /id:101 /bindings:http/*:80:omsapi2.hepsiburada.com: /physicalPath:"c:\inetpub\wwwroot\omsapi2"
+
+mkdir c:\inetpub\wwwroot\omsapiadapter2
+%systemroot%\system32\inetsrv\appcmd add site /name:"omsapiadapter2" /id:102 /bindings:http/*:80:omsapiadapter2.hepsiburada.com: /physicalPath:"c:\inetpub\wwwroot\omsapiadapter2"
+
+%systemroot%\system32\inetsrv\appcmd list site
+
+::app
+    ::delete
+rmdir /S /Q c:\inetpub\wwwroot\mobil-siparislerim2
+mkdir c:\inetpub\wwwroot\mobil-siparislerim2
+    ::create
+%systemroot%\system32\inetsrv\appcmd delete app "Default Web Site/mobil-siparislerim2"
+%systemroot%\system32\inetsrv\appcmd add app /site.name:"Default Web Site" /path:"/mobil-siparislerim2" /physicalPath:"c:\inetpub\wwwroot\mobil-siparislerim2"

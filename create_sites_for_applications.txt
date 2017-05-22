@@ -1,0 +1,7 @@
+set application_name=
+
+%systemroot%\system32\inetsrv\appcmd delete site %application_name%
+
+%systemroot%\system32\inetsrv\appcmd add site /name:%application_name% /id:8 /physicalPath:"c:\oms_applications\win_srv\%application_name%" /bindings:http/*:1901: /state:Stopped
+
+%systemroot%\system32\inetsrv\appcmd stop site %application_name%

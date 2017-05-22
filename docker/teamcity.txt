@@ -7,6 +7,7 @@ docker run -it --name teamcity-server-instance  \
 
 
 docker run -it --name teamcity-server-instance -v D:\src\erdem\docker\teamcity\datadir:/data/teamcity_server/datadir -v D:\src\erdem\docker\teamcity\logs:/opt/teamcity/logs -p 8111:8111 jetbrains/teamcity-server
+docker run -it --name teamcity-server-instance -v D:/src/erdem/docker/teamcity/datadir:/data/teamcity_server/datadir -v D:/src/erdem/docker/teamcity/logs:/opt/teamcity/logs -p 8111:8111 jetbrains/teamcity-server
 
 
 docker run -it -e SERVER_URL="teamcity-server-instance:8111"  \
@@ -17,7 +18,10 @@ docker run -it -e SERVER_URL="teamcity-server-instance:8111"  \
 
 docker run -it -e SERVER_URL="teamcity-server-instance:8111" -v D:\src\erdem\docker\teamcity_agent\conf:/data/teamcity_agent/conf jetbrains/teamcity-agent
 docker run -it -e SERVER_URL="http://teamcity-server-instance:8111/" -v D:\src\erdem\docker\teamcity_agent\conf:/data/teamcity_agent/conf -e AGENT_NAME="teamcity-agent-01" jetbrains/teamcity-agent
+
+--this works because of --link option
 docker run -it -e SERVER_URL="http://teamcity-server-instance:8111/" --link teamcity-server-instance:teamcity-server-instance --privileged -v D:\src\erdem\docker\teamcity_agent\conf:/data/teamcity_agent/conf -e AGENT_NAME="teamcity-agent-01" jetbrains/teamcity-agent
+docker run -it -e SERVER_URL="http://teamcity-server-instance:8111/" --link teamcity-server-instance:teamcity-server-instance --privileged -v D:/src/erdem/docker/teamcity_agent/conf:/data/teamcity_agent/conf -e AGENT_NAME="teamcity-agent-01" jetbrains/teamcity-agent
 
 
 docker run -d --name=teamcity-agent-03 --link teamcity-server-instance:teamcity-server-instance --privileged -e TEAMCITY_SERVER=http://teamcity-server-instance:8111 sjoerdmulder/teamcity-agent:latest
