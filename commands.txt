@@ -36,6 +36,31 @@ git push --set-upstream origin v0.8 -> if newly created branch has not been push
 
 git remote prune -n origin reports what would get pruned on origin, and git remote prune origin actually does the pruning
 
+#deletes remote branch
+git push --delete origin <branch_name>
+
+#deletes local branches with starts with release
+git branch | cut -c3- | grep release | xargs git branch -D
+
+#deletes local branches with starts with hotfix
+git branch | cut -c3- | grep hotfix | xargs git branch -D
+
+
+ 1 - List all your remote branches:
+
+$ git branch -r
+
+2 - Filter the branches by some regular expression. In this case I'm interested in deleting any branch with the 'feature-' prefix:
+
+$ git branch -r | awk -F/ '/\/feature-/{print $2}'
+3 - Pipe the last command to git push to delete them:
+
+$ git branch -r | awk -F/ '/\/feature-/{print $2}' | xargs -I {} git push origin :{}
+4 - Grab a beer.
+
+5 - Remove any local reference to those branches:
+
+$ git remote prune origin
 
 -------------------------------------
 | grep -i tangram
