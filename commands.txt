@@ -34,7 +34,7 @@ git push --set-upstream origin v0.8 -> if newly created branch has not been push
 
 
 
-
+git remote prune -n origin reports what would get pruned on origin, and git remote prune origin actually does the pruning
 
 
 -------------------------------------

@@ -26,3 +26,13 @@ mkdir c:\inetpub\wwwroot\mobil-siparislerim2
     ::create
 %systemroot%\system32\inetsrv\appcmd delete app "Default Web Site/mobil-siparislerim2"
 %systemroot%\system32\inetsrv\appcmd add app /site.name:"Default Web Site" /path:"/mobil-siparislerim2" /physicalPath:"c:\inetpub\wwwroot\mobil-siparislerim2"
+
+
+
+appcmd set site OmsApiAdapter -name:OmsApi
+
+appcmd set site "OmsApi" /bindings:"http/*:80:omsapi.dev.hepsiburada.com"
+appcmd set site /site.name:OmsApi /+bindings.[protocol='http',bindingInformation='*:80:omsapi-green.dev.hepsiburada.com']
+appcmd set site /site.name:OmsApi /+bindings.[protocol='http',bindingInformation='*:80:omsapi-blue.dev.hepsiburada.com']
+appcmd set site /site.name:OmsApi /+bindings.[protocol='http',bindingInformation='127.0.0.1:80:']
+
