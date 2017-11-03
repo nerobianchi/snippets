@@ -2,8 +2,9 @@
 7z x archive.zip -oC:\soft *.cpp -r
 
 -------------------------------------
+netstat -a -o -n
 
-
+-------------------------------------
 
 git clean -df
 git checkout -- .
@@ -62,6 +63,12 @@ $ git branch -r | awk -F/ '/\/feature-/{print $2}' | xargs -I {} git push origin
 
 $ git remote prune origin
 
+
+#who created branch
+git for-each-ref --format='%(authorname) %09 -%(refname)' | sort
+
+#search logs
+git log -g --grep=''
 -------------------------------------
 | grep -i tangram
 
