@@ -73,7 +73,17 @@ git log -g --grep=''
 | grep -i tangram
 
 
+#list files with fullpath
+find . -type f
+find /home/dreftymac -type f
 
+find "$PWD"
+
+---------------------------------
+---------------------------------
+---------------------------------
+---------------------------------
+---------------------------------
 ---------------------------------
 reg.exe query "HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0" /v MSBuildToolsPath
 
