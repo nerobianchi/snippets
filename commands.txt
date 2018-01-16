@@ -133,5 +133,13 @@ reg.exe query "HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0" /v MSBuildTool
 ----:%s/search_for_this/replace_with_this/    - search whole file and replace
 ----:%s/search_for_this/replace_with_this/c   - confirm each replace
 -----------------------------------------------------------------------------------------
+#enable telnet
+dism /online /Enable-Feature /FeatureName:TelnetClient
 -----------------------------------------------------------------------------------------
+linux os name and version
+uname -a.
+lsb_release -a
+cat /etc/*release
+cat /etc/issue*
+cat /proc/version
 -----------------------------------------------------------------------------------------
