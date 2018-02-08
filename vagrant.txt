@@ -1,0 +1,8 @@
+scp -i /Users/erdem/src/devops/vagrant/redis/.vagrant/machines/redis-node-2/virtualbox/private_key -P 2200 vagrant@127.0.0.1:/home/vagrant/hede.conf .
+
+
+vagrant ssh redis-node-2 -c "sudo cat /etc/redis/redis.conf" > redis.conf
+
+
+
+config.vm.synced_folder ".","path", type: "virtualbox"
