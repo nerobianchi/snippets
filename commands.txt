@@ -90,6 +90,8 @@ git show-branch -a \
 #list files with fullpath
 find . -type f
 find /home/dreftymac -type f
+#delete files in all sub folders starts with
+find . -name \*.swp -type f -delete
 
 find "$PWD"
 
