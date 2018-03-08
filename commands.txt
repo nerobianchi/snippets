@@ -145,3 +145,6 @@ cat /etc/*release
 cat /etc/issue*
 cat /proc/version
 -----------------------------------------------------------------------------------------
+#delete  all files older than
+for d in *; do ( cd "$d" && du -h -d 1 ) done
+for d in *; do ( cd "$d" && find . ! -newermt 2018-01-01 ! -type d -delete ) done

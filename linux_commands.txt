@@ -1,0 +1,11 @@
+cat /proc/meminfo
+cat /proc/swaps
+swapon -s
+vmstat
+free
+
+
+netstat -tuplen
+netstat -nlp
+iptables -L -n
+iptables -L -vn
