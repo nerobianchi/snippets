@@ -36,6 +36,7 @@ ifeq ($(shell uname),Darwin)
 	@echo 'mac is in place'
 	brew update
 
+	### k8s ###
 	brew install kubernetes-helm
 
 	# https://github.com/ahmetb/kubectx
@@ -48,6 +49,12 @@ ifeq ($(shell uname),Darwin)
 		source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 		PROMPT='$(kube_ps1)'$PROMPT
 	EOF
+
+	# https://github.com/GoogleContainerTools/skaffold
+	curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-darwin-amd64 && chmod +x skaffold && sudo mv skaffold /usr/local/bin
+
+	### eof k8s ###
+
 
 	# asdf
 	git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.3
@@ -74,6 +81,9 @@ ifeq ($(shell uname),Darwin)
 
 	#photo viewer
 	http://phiewer.com/wp-content/uploads/Phiewer-1.8.2.dmg
+
+	#gitignore
+	npm install gitignore -g
 
 endif
 	
