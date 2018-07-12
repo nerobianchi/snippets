@@ -36,6 +36,112 @@ ifeq ($(shell uname),Darwin)
 	@echo 'mac is in place'
 	brew update
 
+brew install 
+	adr-tools \
+	autoconf \
+	automake \
+	aws-elasticbeanstalk \
+	bash \
+	bash-completion \
+	cairo \
+	cask \
+	cfssl \
+	chromedriver \
+	consul \
+	coreutils \
+	dry \
+	emacs \
+	fontconfig \
+	freetype \
+	fribidi \
+	gauge \
+	gcc \
+	gdbm \
+	gdk-pixbuf \
+	gettext \
+	git \
+	git-flow \
+	glib \
+	gmp \
+	gnutls \
+	gobject-introspection \
+	gradle \
+	graphite2 \
+	harfbuzz \
+	heroku \
+	heroku-node \
+	htop \
+	httpie \
+	icu4c \
+	isl \
+	jpeg \
+	jq \
+	jx \
+	kube-ps1 \
+	kubectx \
+	kubernetes-cli \
+	kubernetes-helm \
+	libcroco \
+	libevent \
+	libffi \
+	libgpg-error \
+	libidn2 \
+	libksba \
+	libmpc \
+	libpng \
+	librsvg \
+	libtasn1 \
+	libtiff \
+	libtool \
+	libunistring \
+	libxml2 \
+	libxslt \
+	libyaml \
+	lua \
+	maven \
+	mongodb \
+	mpfr \
+	nettle \
+	node \
+	node6-lts \
+	node@6 \
+	node@8 \
+	ntfs-3g \
+	oniguruma \
+	openssl \
+	openssl@1.1 \
+	p11-kit \
+	pango \
+	pcre \
+	perl \
+	phantomjs \
+	pixman \
+	pkg-config \
+	pstree \
+	putty \
+	python \
+	python@2 \
+	readline \
+	ruby \
+	ruby-build \
+	sbt \
+	selenium-server-standalone \
+	sqlite \
+	switchaudio-osx \
+	telnet \
+	termius \
+	tmux \
+	tree \
+	unixodbc \
+	vim \
+	watch \
+	wget \
+	xz \
+	zsh \
+	zsh-completions
+
+
+
 	### k8s ###
 	brew install kubernetes-helm
 
@@ -68,12 +174,9 @@ ifeq ($(shell uname),Darwin)
 	asdf install minikube 0.25.2
 	asdf global minikube 0.25.2
 
-
-
-	brew install git
-	brew install heroku/brew/heroku
-
-	brew install node@8
+	brew install git \
+				 heroku/brew/heroku \
+				node@8
 	brew link --overwrite node@8
 	# react
 	npm install -g create-react-app
@@ -83,7 +186,25 @@ ifeq ($(shell uname),Darwin)
 	http://phiewer.com/wp-content/uploads/Phiewer-1.8.2.dmg
 
 	#gitignore
-	npm install gitignore -g
+	npm install -g gitignore
+
+	brew cask install charles \
+		font-fira-code \
+		franz \
+		freemind \
+		go2shell \
+		hyperdock \
+		keka \
+		minishift \
+		mounty \
+		osxfuse \
+		robo-3t \
+		vagrant \
+		virtualbox \
+		xquartz
+
+	# upgrade outdated
+	# brew cask upgrade $(brew cask outdated | awk '{print $1}')
 
 endif
 	
