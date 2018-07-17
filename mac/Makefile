@@ -99,6 +99,7 @@ brew install
 	libyaml \
 	lua \
 	maven \
+	minikube \
 	mongodb \
 	mpfr \
 	nettle \
@@ -111,6 +112,8 @@ brew install
 	openssl \
 	openssl@1.1 \
 	p11-kit \
+	packer \
+	packer-completion \
 	pango \
 	pcre \
 	perl \
@@ -130,6 +133,7 @@ brew install
 	switchaudio-osx \
 	telnet \
 	termius \
+	terraform \
 	tmux \
 	tree \
 	unixodbc \
@@ -170,9 +174,9 @@ brew install
 	
 
 	# https://github.com/kubernetes/minikube
-	asdf plugin-add minikube
-	asdf install minikube 0.25.2
-	asdf global minikube 0.25.2
+	# asdf plugin-add minikube
+	# asdf install minikube 0.25.2
+	# asdf global minikube 0.25.2
 
 	brew install git \
 				 heroku/brew/heroku \
@@ -195,6 +199,7 @@ brew install
 		go2shell \
 		hyperdock \
 		keka \
+		minikube \
 		minishift \
 		mounty \
 		osxfuse \
