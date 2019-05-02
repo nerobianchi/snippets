@@ -7,6 +7,9 @@ git:
 .PHONY: setup
 setup:
 	@echo 'setup is in place'
+
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
+
 	# minikube
 	# https://github.com/kubernetes/minikube/releases
 	curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.2/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
@@ -34,7 +37,20 @@ endif
 mac:
 ifeq ($(shell uname),Darwin)
 	@echo 'mac is in place'
-	brew update
+
+brew tap
+# heroku/brew
+# homebrew/bundle
+# homebrew/cask
+# homebrew/cask-fonts
+# homebrew/core
+# homebrew/fuse
+# homebrew/services
+# homebrew/versions
+# jenkins-x/jx
+# moncho/dry
+
+brew update
 
 brew install 
 	adr-tools \
@@ -142,9 +158,12 @@ brew install
 	wget \
 	xz \
 	zsh \
-	zsh-completions
+	zsh-completions \
+	azure-cli \
+	dep \
+	findutils gnu-tar gnu-sed gawk gnu-indent gnu-getopt
 
-
+brew install yarn --without-node
 
 	### k8s ###
 	brew install kubernetes-helm
@@ -197,7 +216,6 @@ brew install
 		franz \
 		freemind \
 		go2shell \
-		hyperdock \
 		keka \
 		minikube \
 		minishift \
@@ -206,8 +224,34 @@ brew install
 		robo-3t \
 		vagrant \
 		virtualbox \
-		xquartz
+		xquartz \
+		libreoffice \
+		postman \
+        spectacle \
+		android-file-transfer \
+		kdiff3 \
+		vlc \
+		google-backup-and-sync \
+		flux \
+		docker \
+		firefox \
+		gimp \
+		open-in-code \
 
+	    
+
+
+
+brew cask install jetbrains-toolbox \
+	intellij-idea \
+	mps \
+	webstorm \
+	rubymine \
+	pycharm \
+	goland \
+	rider \
+	datagrip
+	
 	# upgrade outdated
 	# brew cask upgrade $(brew cask outdated | awk '{print $1}')
 
