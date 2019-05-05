@@ -2,14 +2,14 @@
 # Script migrates all exisiting branches and tags if you need other than those information please contact
 # Go to parent folder of your projects(Don't use same folder you are currently using)
 # Example scenario; I'll migrate Mobile/Mobile/hb-android repo
-# First create new empty repo https://git.hepsiburada.com. If you use same group and project name everything works fine.
+# First create new empty repo https://git.xyz.com. If you use same group and project name everything works fine.
 # If you will use different group or project for new one you need to modify this script
 # Go to your project folder "cd projects"
 # Run script: project=hb-android group=Mobile ./migrate.sh 
 
 
 #clone exisiting repo
-git clone "http://gitlabnext.hepsiburada.com/$group/$project.git"
+git clone "http://gitlabnext.xyz.com/$group/$project.git"
 #go to cloned project folder 
 cd $project
 # Check if everything is ok
@@ -25,7 +25,7 @@ done
 #Remove exisiting origin
 git remote rm origin
 #Add new origin
-git remote add origin "git@git.hepsiburada.com:$group/$project.git"
+git remote add origin "git@git.xyz.com:$group/$project.git"
 #Push all branches and code
 git push -u origin --all
 #Push all tags

@@ -25,7 +25,7 @@ putty
     open ssh
         type %userprofile%\.ssh\id_rsa.pub
         cat ~/.ssh/id_rsa.pub
-        ssh-keygen -t rsa -C "erdem.ozdemir@hepsiburada.com"
+        ssh-keygen -t rsa -C "erdem.ozdemir@xyz.com"
         type %userprofile%\.ssh\id_rsa.pub | clip
 
 cmder (import config)(should be portable)

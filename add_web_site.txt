@@ -12,10 +12,10 @@ rmdir /S /Q c:\inetpub\wwwroot\omsapiadapter2
 
 ::create web sites
 mkdir c:\inetpub\wwwroot\omsapi2
-%systemroot%\system32\inetsrv\appcmd add site /name:"omsapi2" /id:101 /bindings:http/*:80:omsapi2.hepsiburada.com: /physicalPath:"c:\inetpub\wwwroot\omsapi2"
+%systemroot%\system32\inetsrv\appcmd add site /name:"omsapi2" /id:101 /bindings:http/*:80:omsapi2.xyz.com: /physicalPath:"c:\inetpub\wwwroot\omsapi2"
 
 mkdir c:\inetpub\wwwroot\omsapiadapter2
-%systemroot%\system32\inetsrv\appcmd add site /name:"omsapiadapter2" /id:102 /bindings:http/*:80:omsapiadapter2.hepsiburada.com: /physicalPath:"c:\inetpub\wwwroot\omsapiadapter2"
+%systemroot%\system32\inetsrv\appcmd add site /name:"omsapiadapter2" /id:102 /bindings:http/*:80:omsapiadapter2.xyz.com: /physicalPath:"c:\inetpub\wwwroot\omsapiadapter2"
 
 %systemroot%\system32\inetsrv\appcmd list site
 
@@ -31,8 +31,8 @@ mkdir c:\inetpub\wwwroot\mobil-siparislerim2
 
 appcmd set site OmsApiAdapter -name:OmsApi
 
-appcmd set site "OmsApi" /bindings:"http/*:80:omsapi.dev.hepsiburada.com"
-appcmd set site /site.name:OmsApi /+bindings.[protocol='http',bindingInformation='*:80:omsapi-green.dev.hepsiburada.com']
-appcmd set site /site.name:OmsApi /+bindings.[protocol='http',bindingInformation='*:80:omsapi-blue.dev.hepsiburada.com']
+appcmd set site "OmsApi" /bindings:"http/*:80:omsapi.dev.xyz.com"
+appcmd set site /site.name:OmsApi /+bindings.[protocol='http',bindingInformation='*:80:omsapi-green.dev.xyz.com']
+appcmd set site /site.name:OmsApi /+bindings.[protocol='http',bindingInformation='*:80:omsapi-blue.dev.xyz.com']
 appcmd set site /site.name:OmsApi /+bindings.[protocol='http',bindingInformation='127.0.0.1:80:']
 
